@@ -9,6 +9,7 @@ python-dotenv = "*"
 djangorestframework = "*"
 mongoengine = "*"
 pre-commit = "*"
+django-mongoengine-filter = "*"
 
 [dev-packages]
 

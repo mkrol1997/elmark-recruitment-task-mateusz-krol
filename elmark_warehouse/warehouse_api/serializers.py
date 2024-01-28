@@ -1,8 +1,9 @@
 from typing import Any, Optional, OrderedDict
 
-from API.models import Categories, PartLocation, Parts
-from API.validators import CategoriesValidators, PartsValidators
 from rest_framework_mongoengine import serializers
+
+from .models import Categories, PartLocation, Parts
+from .validators import CategoriesValidators, PartsValidators
 
 
 class CategoriesSerializer(serializers.DocumentSerializer):
