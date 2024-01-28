@@ -75,8 +75,6 @@ mongoengine.connect(
 
 # Query filter configuration
 
-# MONGOENGINE FILTER SETTINGS
-
 FILTER_CONFIG = {
     StringField: {
         "filter_class": StringFilter,
