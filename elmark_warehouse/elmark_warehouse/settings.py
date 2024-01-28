@@ -18,6 +18,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    "drf_yasg",
     "rest_framework",
     "warehouse_api.apps.WarehouseApiConfig",
     "django.contrib.admin",

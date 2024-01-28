@@ -10,6 +10,8 @@ djangorestframework = "*"
 mongoengine = "*"
 pre-commit = "*"
 django-mongoengine-filter = "*"
+drf-yasg = "*"
+django-rest-framework-mongoengine = "*"
 
 [dev-packages]
 

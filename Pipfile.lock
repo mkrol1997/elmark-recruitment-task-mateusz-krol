@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "aedd02fbb5fea859c11411a5308ee4682890485271d23999b05d9cba34d227a2"
+            "sha256": "3bbf90b43092773ed253117d9959926b12014de0100905c3fec658bb3f19e5ad"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -57,6 +57,13 @@
             "markers": "python_version >= '3.7'",
             "version": "==0.4.2"
         },
+        "django-rest-framework-mongoengine": {
+            "hashes": [
+                "sha256:cabb60f2b8ecf6ceaa13550b47dde0b8f2fe9b6f7b69be681e059cf31b51d729"
+            ],
+            "index": "pypi",
+            "version": "==3.4.1"
+        },
         "djangorestframework": {
             "hashes": [
                 "sha256:579a333e6256b09489cbe0a067e66abe55c6595d8926be6b99423786334350c8",
@@ -74,6 +81,15 @@
             "markers": "python_version >= '3.8'",
             "version": "==2.5.0"
         },
+        "drf-yasg": {
+            "hashes": [
+                "sha256:4c3b93068b3dfca6969ab111155e4dd6f7b2d680b98778de8fd460b7837bdb0d",
+                "sha256:f85642072c35e684356475781b7ecf5d218fff2c6185c040664dd49f0a4be181"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.6'",
+            "version": "==1.21.7"
+        },
         "filelock": {
             "hashes": [
                 "sha256:521f5f56c50f8426f5e03ad3b281b490a87ef15bc6c526f168290f0c7148d44e",
@@ -89,6 +105,14 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==2.5.33"
+        },
+        "inflection": {
+            "hashes": [
+                "sha256:1a29730d366e996aaacffb2f1f1cb9593dc38e2ddd30c91250c6dde09ea9b417",
+                "sha256:f38b2b640938a4f35ade69ac3d053042959b62a0f1076a5bbaa1b9526605a8a2"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==0.5.1"
         },
         "mongoengine": {
             "hashes": [
@@ -106,6 +130,14 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6'",
             "version": "==1.8.0"
+        },
+        "packaging": {
+            "hashes": [
+                "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5",
+                "sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==23.2"
         },
         "platformdirs": {
             "hashes": [
@@ -316,6 +348,14 @@
             ],
             "markers": "sys_platform == 'win32'",
             "version": "==2023.4"
+        },
+        "uritemplate": {
+            "hashes": [
+                "sha256:4346edfc5c3b79f694bccd6d6099a322bbeb628dbf2cd86eea55a456ce5124f0",
+                "sha256:830c08b8d99bdd312ea4ead05994a38e8936266f84b9a7878232db50b044e02e"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==4.1.1"
         },
         "virtualenv": {
             "hashes": [
