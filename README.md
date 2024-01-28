@@ -156,20 +156,6 @@ ________
    - **PATCH:** Perform single category document partial update.
    - **DELETE:** Delete single category document.
 
-**To properly start the game follow the instructions:**
-   1. Select "Create Room" in the dashboard.
-   2. Share your game with one of the following ways:
-
-      - **Unique game code**
-        - Opponent has to enter shared code in Join Room section.
-        - Game starts automatically.
-
-      - **Direct URL link**
-        - Given URL connects the opponent with the game automatically.
-
-   3. The game will start automatically as soon as both players are connected.
-   4. To move, select one of the highlighted pawns
-
 ________
 # License and Acknowledgement
 
