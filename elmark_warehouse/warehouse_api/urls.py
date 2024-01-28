@@ -8,5 +8,5 @@ urlpatterns = [
     path("categories/<str:name>", CategoryDetailView.as_view()),
     path("parts/", PartsView.as_view()),
     path("parts/<str:serial_number>", PartDetailView.as_view()),
-    path("docs/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
+    path("", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]
