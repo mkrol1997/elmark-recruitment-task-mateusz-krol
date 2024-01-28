@@ -55,13 +55,13 @@ parts_query_parameters = [
     openapi.Parameter(
         name="price_0",
         in_=openapi.IN_QUERY,
-        description="Filter by minimum price. Returns parts collection with prices greater than or equal to the given value",
+        description="Minimum price range. Returns parts collection with prices greater than or equal to the given value. NOTICE: Use only with price_1 in order to declare maximum price range",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
         name="price_1",
         in_=openapi.IN_QUERY,
-        description="Filter by maximum price. Returns parts collection with prices lower than or equal to the given value",
+        description="Maximum price range. Returns parts collection with prices lower than or equal to the given value NOTICE: Use only with price_0 in order to declare minimum price range",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
