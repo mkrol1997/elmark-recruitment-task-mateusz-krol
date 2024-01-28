@@ -84,10 +84,10 @@ ________
     git clone https://github.com/mkrol1997/elmark-recruitment-task-mateusz-krol/
     ```
 
-2. **Navigate to the Project Docker Configuration Directory:**
+2. **Navigate to the Project Directory:**
 
     ```bash
-    cd ./elmark-recruitment-task-mateusz-krol/.docker
+    cd ./elmark-recruitment-task-mateusz-krol
     ```
 3. **Additional Configuration:**
 
@@ -136,7 +136,21 @@ ________
 
 **Parts Endpoint: `/api/parts/`**
    - **GET:** Retrieve a filtered collection of parts documents using URL parameters.
-   - **POST:** Create a new part by sending a POST request to this endpoint.
+     * ```
+       NOTICE: When filtering by price or quantity range it is required to specify
+       both minand max range values
+       ```
+       * Example usage
+       ```GET /api/parts/?quantity_0=20&quantity_1=100```
+
+     * ```
+       NOTICE: All location filtering parameters should be prefixed with "location__"
+       ```
+     * Example usage
+       ```GET /api/parts/?location_room=4A```
+
+
+   - **POST:** Create a new part document.
 
 **Part Endpoint: `/api/parts/{serial_number}/`**
    - **GET:** Retrieve a single part document.
@@ -146,9 +160,7 @@ ________
 
 **Categories Endpoint: `/api/categories/`**
    - **GET:** Retrieve a filtered collection of category documents using URL parameters.
-   - **PUT:** Create a new part by sending a POST request to this endpoint.
-   - **PATCH:** Create a new part by sending a POST request to this endpoint.
-   - **DELETE:** Create a new part by sending a POST request to this endpoint.
+   - **POST:** Create a new category document.
 
 **Category Endpoint: `/api/categories/{category_name}/`**
    - **GET:** Retrieve a single category document.
