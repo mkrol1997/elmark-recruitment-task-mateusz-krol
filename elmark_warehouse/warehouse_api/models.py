@@ -6,11 +6,16 @@ from mongoengine import (
     IntField,
     StringField,
 )
+from rest_framework.serializers import ValidationError
 
 
 class Categories(Document):
     name = StringField(required=True, unique=True, null=False)
     parent_name = StringField(required=False, null=False, default="")
+
+    def clean(self):
+        if self.name == self.parent_name:
+            raise ValidationError("Name and parent_name can not be equal.")
 
 
 class PartLocation(EmbeddedDocument):

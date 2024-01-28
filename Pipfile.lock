@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c5f9edce90acdbddb568f6f8c5300b37045fa754ebbeef3bbd0143ce0898244e"
+            "sha256": "aedd02fbb5fea859c11411a5308ee4682890485271d23999b05d9cba34d227a2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -47,6 +47,15 @@
             "index": "pypi",
             "markers": "python_version >= '3.10'",
             "version": "==5.0.1"
+        },
+        "django-mongoengine-filter": {
+            "hashes": [
+                "sha256:344f65c09b09475447a7903445983426b7146cb55d528be733c48cf32307b6d7",
+                "sha256:597b9807e8210c0eb70419ac8d28993d30b3bc7c56cd796bebd4a6cc09ac33e4"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==0.4.2"
         },
         "djangorestframework": {
             "hashes": [
@@ -283,6 +292,14 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==69.0.3"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.16.0"
         },
         "sqlparse": {
             "hashes": [
