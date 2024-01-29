@@ -18,7 +18,6 @@ class CategoriesView(ListCreateAPIView):
     @swagger_auto_schema(
         operation_description="Retrieve a collection of categories filtered using available parameters.",
         manual_parameters=categories_query_parameters,
-        omit_fields=("id",),
     )
     def get(self, request, *args, **kwargs):
         return super().get(request, *args, **kwargs)
@@ -50,7 +49,6 @@ class PartsView(ListCreateAPIView):
     @swagger_auto_schema(
         operation_description="Retrieve a collection of categories filtered using available parameters.",
         manual_parameters=parts_query_parameters,
-        omit_fields=("id",),
     )
     def get(self, request, *args, **kwargs):
         return super().get(request, *args, **kwargs)
