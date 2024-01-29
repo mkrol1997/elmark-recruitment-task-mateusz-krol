@@ -135,20 +135,18 @@ ________
 ## For more detailed documentation, please visit API endpoint: `/api/`
 
 **Parts Endpoint: `/api/parts/`**
-   - **GET:** Retrieve a filtered collection of parts documents using URL parameters.
-     * ```
-       NOTICE: When filtering by price or quantity range it is required to specify
-       both minand max range values
-       ```
+   - **GET:** Retrieve a filtered collection of part documents using URL parameters.
+     ```
+       NOTICE: When filtering by price or quantity, use '_min' or '_max' sufix.
+       For further explanation please visit: `/api/`
+     ```
        * Example usage
-       ```GET /api/parts/?quantity_0=20&quantity_1=100```
-
-     * ```
-       NOTICE: All location filtering parameters should be prefixed with "location__"
        ```
-     * Example usage
-       ```GET /api/parts/?location_room=4A```
-
+        GET /api/parts/?quantity_min=20&price_max=100
+       ```
+       ```
+        GET /api/parts/?quantity_min=20&price_max=100
+       ```
 
    - **POST:** Create a new part document.
 
