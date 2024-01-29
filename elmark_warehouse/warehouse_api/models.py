@@ -10,8 +10,12 @@ from rest_framework.serializers import ValidationError
 
 
 class Categories(Document):
-    name = StringField(required=True, unique=True, null=False)
-    parent_name = StringField(required=False, null=False, default="")
+    name = StringField(
+        required=True,
+        null=False,
+        unique=True,
+    )
+    parent_name = StringField(required=True, null=True, default="")
 
     def clean(self):
         if self.name == self.parent_name:
