@@ -91,7 +91,7 @@ ________
     ```
 3. **Additional Configuration:**
 
-    #### It is essential to create or paste .env file at specified location with all required environment variables set.
+    #### It is essential to create .env file at specified location with all required environment variables set.
     - .env directory path:
       ```bash
       elmark-recruitment-task-mateusz-krol/.env
@@ -134,8 +134,11 @@ ________
 # Available API Endpoints
 ## For more detailed documentation, please visit API endpoint: `/api/`
 
-**Parts Endpoint: `/api/parts/`**
-   - **GET:** Retrieve a filtered collection of part documents using URL parameters.
+## `/api/`
+   - **GET:** Detailed API Documentation.
+
+## `/api/parts/`
+   - **GET:** Retrieve a collection of filtered part documents using URL parameters.
      ```
        NOTICE: When filtering by price or quantity, use '_min' or '_max' sufix.
        For further explanation please visit: `/api/`
@@ -150,17 +153,17 @@ ________
 
    - **POST:** Create a new part document.
 
-**Part Endpoint: `/api/parts/{serial_number}/`**
+## `/api/parts/{serial_number}/`
    - **GET:** Retrieve a single part document.
    - **PUT:** Update or create a single part document.
    - **PATCH:** Perform single part document partial update.
    - **DELETE:** Delete single part document.
 
-**Categories Endpoint: `/api/categories/`**
+## `/api/categories/`
    - **GET:** Retrieve a filtered collection of category documents using URL parameters.
    - **POST:** Create a new category document.
 
-**Category Endpoint: `/api/categories/{category_name}/`**
+## `/api/categories/{category_name}/`
    - **GET:** Retrieve a single category document.
    - **PUT:** Update or create a single category document.
    - **PATCH:** Perform single category document partial update.
