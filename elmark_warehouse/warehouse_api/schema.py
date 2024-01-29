@@ -16,13 +16,13 @@ categories_query_parameters = [
     openapi.Parameter(
         name="name",
         in_=openapi.IN_QUERY,
-        description="Filter by name, containing given substring (case-insensitive)",
+        description="Filter by category name, containing given substring (case-insensitive)",
         type=openapi.TYPE_STRING,
     ),
     openapi.Parameter(
         name="parent_name",
         in_=openapi.IN_QUERY,
-        description="Filter by parent_name, containing given substring (case-insensitive)",
+        description="Filter by category parent_name, containing given substring (case-insensitive)",
         type=openapi.TYPE_STRING,
     ),
 ]
@@ -53,63 +53,67 @@ parts_query_parameters = [
         type=openapi.TYPE_STRING,
     ),
     openapi.Parameter(
-        name="price_0",
+        name="price_min",
         in_=openapi.IN_QUERY,
-        description="Minimum price range. Returns parts collection with prices greater than or equal to the given value. NOTICE: Use only with price_1 in order to declare maximum price range",
+        description="Filter by minimum price. "
+        "Returns parts collection with price greater than or equal to the given value",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="price_1",
+        name="price_max",
         in_=openapi.IN_QUERY,
-        description="Maximum price range. Returns parts collection with prices lower than or equal to the given value NOTICE: Use only with price_0 in order to declare minimum price range",
+        description="Filter by maximum price. "
+        "Returns parts collection with price lower than or equal to the given value",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="quantity_0",
+        name="quantity_min",
         in_=openapi.IN_QUERY,
-        description="Filter by minimum quantity. Returns parts collection with quantity greater than or equal to the given value",
+        description="Filter by minimum quantity. "
+        "Returns parts collection with quantity greater than or equal to the given value",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="quantity_1",
+        name="quantity_max",
         in_=openapi.IN_QUERY,
-        description="Filter by maximum quantity. Return parts collection with prices lower than or equal to the given value",
+        description="Filter by maximum quantity. "
+        "Returns parts collection with quantity lower than or equal to the given value",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="location__room",
+        name="room",
         in_=openapi.IN_QUERY,
-        description="Filter by room name location, containing given substring (case-insensitive)",
+        description="Filter by location room name, containing given substring (case-insensitive)",
         type=openapi.TYPE_STRING,
     ),
     openapi.Parameter(
-        name="location__bookcase",
+        name="bookcase",
         in_=openapi.IN_QUERY,
-        description="Filter by bookcase number location",
+        description="Filter by location bookcase number",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="location__shelf",
+        name="shelf",
         in_=openapi.IN_QUERY,
-        description="Filter by shelf number location ",
+        description="Filter by location shelf number",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="location__cuvette",
+        name="cuvette",
         in_=openapi.IN_QUERY,
-        description="Filter by cuvette number location",
+        description="Filter by location cuvette number",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="location__column",
+        name="column",
         in_=openapi.IN_QUERY,
-        description="Filter by column number location",
+        description="Filter by location column number",
         type=openapi.TYPE_NUMBER,
     ),
     openapi.Parameter(
-        name="location__row",
+        name="row",
         in_=openapi.IN_QUERY,
-        description="Filter by row number location",
+        description="Filter by location row number",
         type=openapi.TYPE_NUMBER,
     ),
 ]
