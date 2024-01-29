@@ -91,7 +91,7 @@ ________
     ```
 3. **Additional Configuration:**
 
-    #### It is essential to create or paste .env file at specified location with all required environment variables set.
+    #### It is essential to create .env file at specified location with all required environment variables set.
     - .env directory path:
       ```bash
       elmark-recruitment-task-mateusz-krol/.env
