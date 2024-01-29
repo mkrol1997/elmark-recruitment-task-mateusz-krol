@@ -140,7 +140,7 @@ ________
 ## `/api/parts/`
    - **GET:** Retrieve a collection of filtered part documents using URL parameters.
      ```
-       NOTICE: When filtering by price or quantity, use '_min' or '_max' sufix.
+       NOTICE: When filtering by price or quantity, use '_min' or '_max' suffix.
        For further explanation please visit: `/api/`
      ```
        * Example usage
