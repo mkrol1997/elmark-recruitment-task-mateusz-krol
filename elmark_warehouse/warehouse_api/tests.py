@@ -9,7 +9,7 @@ from pymongo import MongoClient
 from rest_framework.serializers import ValidationError
 from rest_framework.test import APIClient
 
-from .models import Categories, PartLocation, Parts
+from .models import Categories, Parts
 
 
 def switch_db_connection() -> MongoClient:
