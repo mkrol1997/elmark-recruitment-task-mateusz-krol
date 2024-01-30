@@ -20,6 +20,7 @@ class Categories(Document):
     def clean(self):
         if self.name == self.parent_name:
             raise ValidationError("Name and parent_name can not be equal.")
+        return super().clean()
 
 
 class PartLocation(EmbeddedDocument):
