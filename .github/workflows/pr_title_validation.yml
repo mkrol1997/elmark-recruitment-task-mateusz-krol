@@ -2,7 +2,7 @@ name: PR Title Validation
 
 on:
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "development" ]
 
 jobs:
   pr_title_validation:
