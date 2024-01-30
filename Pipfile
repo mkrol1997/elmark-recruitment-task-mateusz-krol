@@ -12,6 +12,7 @@ pre-commit = "*"
 django-mongoengine-filter = "*"
 drf-yasg = "*"
 django-rest-framework-mongoengine = "*"
+mongomock = "*"
 
 [dev-packages]
 

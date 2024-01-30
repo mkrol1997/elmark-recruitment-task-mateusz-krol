@@ -1,0 +1,53 @@
+name: CI UTs
+
+on:
+
+  push:
+    branches: [ "main", "master", "development" ]
+  pull_request:
+    branches: [ "main", "master", "development"]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    env:
+      PIPENV_VENV_IN_PROJECT: true
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Cache Pipenv Dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pipenv-
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - name: Install Dependencies
+        run: |
+          pipenv install --dev --system --deploy
+
+      - name: Run engine unit tests
+        run: |
+          python manage.py test
+
+        working-directory: ${{ github.workspace }}/elmark_warehouse
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          DATABASE_HOST: ${{ secrets.DB_HOST }}
+          DATABASE_NAME: ${{ secrets.DB_NAME }}
