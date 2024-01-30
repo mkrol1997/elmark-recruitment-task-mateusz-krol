@@ -149,7 +149,7 @@ ________
         GET /api/parts/?quantity_min=20&price_max=100
        ```
        ```
-        GET /api/parts/?quantity_min=20&price_max=100
+        GET /api/parts/?price_max=2200
        ```
 
    - **POST:** Create a new part document.
