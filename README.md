@@ -52,6 +52,7 @@ Simplifies MongoDB document filtering using pre-defined filter classes.
 It provides a clean and interactive UI for exploring and testing API endpoints.
 Automatically generates Swagger/OpenAPI documentation for your DRF API.
 Allows to easily share comprehensive API documentation with developers and clients.
+- **mongomock:** Emulates MongoDB in-memory, providing a mock environment for testing and development without the need for an actual MongoDB server.
 - **Docker :** Providing containerization and deployment simplifying, ensuring cross-platform deployment consistency.
 - **Pipenv:** Automatically creates and manages project virtual environment. Allows packages management from Pipfile.
 - **pre-commit:** Automatically run hooks before each commit to enforce code standards ensuring code consistency, linting, and other checks.
